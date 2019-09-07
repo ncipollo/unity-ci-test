@@ -9,7 +9,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - uses: ncipollo/unity-action@master
+    - name: 'run unity'
+    uses: ncipollo/unity-action@master
     with: 
       username: ${{ secrets.username }}
       password: ${{ secrets.password }}
