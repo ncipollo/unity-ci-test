@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+    - name: 'Decrypt license'
+      env: 
+        LICENSE_KEY: ${{ secrets.licenseKey }}
+      run: gpg --quiet --batch --yes --decrypt --passphrase="$LICENSE_KEY" --output Unity_v2019.ulf Unity_v2019.ulf.gpg
     - name: 'run unity'
       uses: ncipollo/unity-action@master
       with: 
