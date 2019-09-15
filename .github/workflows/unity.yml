@@ -12,9 +12,14 @@ jobs:
       env: 
         LICENSE_KEY: ${{ secrets.licenseKey }}
       run: gpg --quiet --batch --yes --decrypt --passphrase="$LICENSE_KEY" --output Unity_v2019.ulf Unity_v2019.ulf.gpg
-    - name: 'run unity'
+    - name: 'run unity tests'
       uses: ncipollo/unity-action@master
       with: 
         username: ${{ secrets.username }}
         password: ${{ secrets.password }}
         license: ${{ secrets.license }}
+    - name: 'run unity build'
+      uses: ncipollo/unity-action@master
+      with: 
+        license: ${{ secrets.license }}
+        mode: build
