@@ -11,7 +11,7 @@ namespace Tests
         [Test]
         public void IsThisRealLife()
         {
-            Assert.IsTrue(true);
+            Assert.IsTrue(false);
         }
     }
 }
