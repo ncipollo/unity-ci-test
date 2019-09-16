@@ -7,7 +7,7 @@ using UnityEditor.Build.Reporting;
 public static class BuildCommand {
     static void PerformBuild() {
         var options = new BuildPlayerOptions {
-            locationPathName = "Build/os_x/",
+            locationPathName = "Build/os_x/test-game.app",
             target = BuildTarget.StandaloneOSX
         };
 
