@@ -24,5 +24,6 @@ public static class BuildCommand {
             Debug.Log("Build failed");
             EditorApplication.Exit(1);
         }
+        EditorApplication.Exit(0);
     }
 }
