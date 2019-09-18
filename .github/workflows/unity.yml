@@ -20,10 +20,8 @@ jobs:
         license: ${{ secrets.license }}
         mode: build
         build_method: BuildCommand.PerformBuild
-    - name: 'Create tarball'
-      run: tar -czf build.tar.gz Build/os_x
     - name: 'upload artifact'
       uses: actions/upload-artifact@v1.0.0
       with:
         name: build.tar.gz
-        path: build.tar.gz
+        path: Build/os_x
