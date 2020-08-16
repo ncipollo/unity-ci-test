@@ -9,3 +9,5 @@ xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' \
     -logFile /dev/stdout \
     -quit \
     -createManualActivationFile
+
+cp Unity_${UNITY_VERSION}.alf docker-out

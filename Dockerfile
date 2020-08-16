@@ -7,9 +7,10 @@ COPY . .
 RUN apt-get update -yqq
 RUN apt-get install -y zsh
 
-# Clean up apt-get & Remove git
+# Clean up
 RUN apt-get clean
 RUN rm -rf .git
+RUN rm docker-*.sh
 
 # Trick out zsh
 RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
