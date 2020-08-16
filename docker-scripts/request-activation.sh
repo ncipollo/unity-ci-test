@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+cd ..
 
 # Request the manual activation file for activating unity personal
 xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' \
@@ -10,4 +11,4 @@ xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' \
     -quit \
     -createManualActivationFile
 
-cp Unity_${UNITY_VERSION}.alf docker-out
+cp Unity_v${UNITY_VERSION}.alf out
