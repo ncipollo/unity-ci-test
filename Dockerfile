@@ -5,7 +5,7 @@ COPY . .
 
 # Install zsh
 RUN apt-get update -yqq
-RUN apt-get install -y zsh
+RUN apt-get install -y mesa-utils zsh
 
 # Clean up
 RUN apt-get clean

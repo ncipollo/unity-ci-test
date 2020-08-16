@@ -1,7 +1,0 @@
-[Licensing::Module] Channel doesn't exist: "LicenseClient-root"
-[Licensing::Module] Successfully launched the LicensingClient (PId: 296)
-[SignatureVerifier] Application signature verification not supported on this platform.
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-root" (connect: 0.49s, validation: 0.06s, handshake: 0.00s)
-[Licensing::Module] Connected to LicensingClient (PId: 296, launch time: 0.00, total connection time: 0.55s)
-Entitlement-based licensing initiated
-[LicensingClient] Licenses updated successfully

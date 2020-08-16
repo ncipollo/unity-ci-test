@@ -14,3 +14,5 @@ xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' \
       -runTests \
       -testPlatform editmode \
       -testResults "$OUT/editmode-results.xml" \
+
+cat "$OUT/editmode.log"
