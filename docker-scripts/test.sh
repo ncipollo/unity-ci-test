@@ -9,11 +9,8 @@ OUT="${DIR}/out"
 xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' \
     /opt/Unity/Editor/Unity \
       -batchmode \
-      -logFile "$OUT/editmode.log" \
+      -logFile /dev/stdout \
       -projectPath "." \
       -runTests \
       -testPlatform editmode \
       -testResults "$OUT/editmode-results.xml" \
-
-printf "\n\n****editmode logs****\n"
-cat "$OUT/editmode.log"
